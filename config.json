@@ -1,0 +1,28 @@
+{
+  "name": "CBus MQTT Daemon",
+  "version": "1.0.0",
+  "slug": "cmqttd",
+  "description": "Connect a CBus network to MQTT",
+  "url": "https://github.com/edc1/cmqttd",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "application",
+  "boot": "auto",
+  "panel-icon": "mdi:server-network",
+  "options": {
+    "log_level": "DEBUG",
+    "broker_address": "",
+    "broker_port": 8883,
+    "broker_username": "",
+    "broker_password": "",
+    "cni_address": "",
+    "cni_port": 10001},
+  "schema": {
+    "log_level": "list(CRITICAL|ERROR|WARNING|INFO|DEBUG)",
+    "broker_address": "str",
+    "broker_port": "port",
+    "broker_username": "str",
+    "broker_password": "password",
+    "cni_address": "str",
+    "cni_port": "port"}
+}
+
