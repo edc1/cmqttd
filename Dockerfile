@@ -29,14 +29,14 @@ ARG BUILD_REF
 ARG BUILD_VERSION
 
 LABEL \
-    io.hass.name="CBus MQTT Daemon" \
-    io.hass.description="Connect a CBus network to MQTT" \
+    io.hass.name="CBus MQTT Bridge" \
+    io.hass.description="Connect a Clpsal CBus network to an MQTT broker" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
     maintainer="CMQTTD <cmqttd@dotdashdash.co.uk>" \
-    org.opencontainers.image.title="CBus MQTT Daemon" \
-    org.opencontainers.image.description="Connect a CBus network to MQTT" \
+    org.opencontainers.image.title="CBus MQTT Bridge" \
+    org.opencontainers.image.description="Connect a Clpsal CBus network to an MQTT broker" \
     org.opencontainers.image.vendor="Home Assistant Community Add-ons" \
     org.opencontainers.image.authors="CMQTTD <cmqttd@dotdashdash.co.uk>" \
     org.opencontainers.image.licenses="MIT" \
