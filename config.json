@@ -9,7 +9,6 @@
   "startup": "application",
   "boot": "auto",
   "panel-icon": "mdi:server-network",
-//  "image": "edc1/image-{arch}-addon-cmqttd",
   "options": {
     "log_level": "DEBUG",
     "broker_address": "",
