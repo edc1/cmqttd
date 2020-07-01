@@ -8,20 +8,20 @@ ENV LANG C.UTF-8
 COPY run.sh /
 RUN chmod a+x /run.sh
 RUN apk add --no-cache \
-    python3 \
-    python3-dev \
-    py3-pip \
-    py3-wheel \
-    git \
-    gcc \
-    g++ \
-    libxml2 \
-    libxml2-dev \
-    libxslt \
-    libxslt-dev \
-    musl \
-    musl-dev
-RUN git clone -b master https://github.com/micolous/cbus.git && cd cbus && pip3 install -r requirements.txt && python3 setup.py install
+python3 \
+python3-dev \
+py3-pip \
+py3-wheel \
+git \
+gcc \
+g++ \
+libxml2 \
+libxml2-dev \
+libxslt \
+libxslt-dev \
+musl \
+musl-dev
+RUN git clone -b master https://github.com/edc1/cbus.git && cd cbus && pip3 install -r requirements.txt && python3 setup.py install
 
 ARG BUILD_ARCH
 ARG BUILD_DATE
